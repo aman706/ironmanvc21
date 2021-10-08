@@ -147,9 +147,7 @@ async def playlist(client, message):
                     ),
                 ],
                 [
-                    InlineKeyboardButton(
-                        "💵 SEDD", url="https://t.me/HYPER_KING_2417"
-                    ),
+                    InlineKeyboardButton("💵 SEDD", url="https://t.me/HYPER_KING_2417"),
                     InlineKeyboardButton(text="🗑 ᴛᴜᴛᴜᴘ", callback_data="cls"),
                 ],
             ]
@@ -477,9 +475,7 @@ async def play(_, message: Message):
                     InlineKeyboardButton(
                         "💌 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{updateschannel}"
                     ),
-                    InlineKeyboardButton(
-                        "💵 SEDD", url="https://t.me/HYPER_KING_2417"
-                    ),
+                    InlineKeyboardButton("💵 SEDD", url="https://t.me/HYPER_KING_2417"),
                 ],
                 [InlineKeyboardButton(text="🗑 ᴛᴜᴛᴜᴘ", callback_data="cls")],
             ]
@@ -534,9 +530,7 @@ async def play(_, message: Message):
                     InlineKeyboardButton(
                         "💌 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{updateschannel}"
                     ),
-                    InlineKeyboardButton(
-                        "💵 ꜱEED", url="https://t.me/HYPER_KING_2417"
-                    ),
+                    InlineKeyboardButton("💵 ꜱEED", url="https://t.me/HYPER_KING_2417"),
                 ],
                 [InlineKeyboardButton(text="🗑 ᴛᴜᴛᴜᴘ", callback_data="cls")],
             ]
@@ -584,9 +578,7 @@ async def play(_, message: Message):
                     InlineKeyboardButton(
                         "💌 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{updateschannel}"
                     ),
-                    InlineKeyboardButton(
-                        "💵 SEDD", url="https://t.me/HYPER_KING_2417"
-                    ),
+                    InlineKeyboardButton("💵 SEDD", url="https://t.me/HYPER_KING_2417"),
                 ],
                 [InlineKeyboardButton(text="🗑 ᴛᴜᴛᴜᴘ", callback_data="cls")],
             ]
@@ -651,9 +643,7 @@ async def stream(_, message: Message):
             ],
             [
                 InlineKeyboardButton("💌 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{updateschannel}"),
-                InlineKeyboardButton(
-                    "💵 SEDDD", url="https://t.me/HYPER_KING_2417"
-                ),
+                InlineKeyboardButton("💵 SEDDD", url="https://t.me/HYPER_KING_2417"),
             ],
             [InlineKeyboardButton(text="🗑 ᴛᴜᴛᴜᴘ", callback_data="cls")],
         ]
