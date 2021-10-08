@@ -32,7 +32,7 @@ async def pause(_, message: Message):
     if (chat_id not in callsmusic.pytgcalls.active_calls) or (
         callsmusic.pytgcalls.active_calls[chat_id] == "paused"
     ):
-        await message.reply_text("❗ **Tidak ada Lagu yang sedang diputar!**")
+        await message.reply_text("❗ **No Song is playing!**")
     else:
         callsmusic.pytgcalls.pause_stream(chat_id)
         await message.reply_text("▶️ **Paused!**")
@@ -45,7 +45,7 @@ async def resume(_, message: Message):
     if (chat_id not in callsmusic.pytgcalls.active_calls) or (
         callsmusic.pytgcalls.active_calls[chat_id] == "playing"
     ):
-        await message.reply_text("❗ **Tidak ada Lagu yang sedang dijeda!**")
+        await message.reply_text("❗ **No Song is currently paused!**")
     else:
         callsmusic.pytgcalls.resume_stream(chat_id)
         await message.reply_text("⏸ **Resumed!**")
@@ -56,7 +56,7 @@ async def resume(_, message: Message):
 async def stop(_, message: Message):
     chat_id = get_chat_id(message.chat)
     if chat_id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("❗ **Tidak ada Lagu yang sedang diputar!**")
+        await message.reply_text("❗ **No Song is playing!**")
     else:
         try:
             callsmusic.queues.clear(chat_id)
@@ -64,7 +64,7 @@ async def stop(_, message: Message):
             pass
 
         callsmusic.pytgcalls.leave_group_call(chat_id)
-        await message.reply_text("❌ **Memberhentikan Lagu!**")
+        await message.reply_text("❌ **Stop Song!**")
 
 
 @Client.on_message(command(["skip", f"skip@{BOT_USERNAME}"]) & other_filters)
@@ -73,7 +73,7 @@ async def skip(_, message: Message):
     global que
     chat_id = get_chat_id(message.chat)
     if chat_id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("❗ **Tidak ada Lagu Selanjutnya untuk dilewati!**")
+        await message.reply_text("❗ **No Next Song to skip!**")
     else:
         callsmusic.queues.task_done(chat_id)
 
@@ -84,7 +84,7 @@ async def skip(_, message: Message):
                 chat_id, callsmusic.queues.get(chat_id)["file"]
             )
 
-        await message.reply_text("⏩ **Melewati lagu saat ini!**")
+        await message.reply_text("⏩ **Skip the current song!**")
 
 
 @Client.on_message(filters.command(["admincache", f"admincache@{BOT_USERNAME}"]))
@@ -97,4 +97,4 @@ async def admincache(client, message: Message):
             for member in await message.chat.get_members(filter="administrators")
         ],
     )
-    await message.reply_text("✅️ **Daftar admin** telah **diperbarui**")
+    await message.reply_text("✅️ **Admin list** has been **updated**")
