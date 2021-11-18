@@ -1,9 +1,5 @@
-#Hyper-X Music
-<p align="center">
-  <a href="https://github.com/AKD1317/HYPER-X-0.1/fork">
-    <img src="https://img.shields.io/github/forks/kenkansaja/Music-Ken?label=FORK&style=social&logoColor=blue"widht="50" height="30">
-    
-# Hyper-Music
+## Hyper-X Music
+
 <p align="center">
   <img src="https://telegra.ph/file/a2dc4c418afd06f9006fb.jpg">
 </p>
