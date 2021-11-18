@@ -27,7 +27,7 @@
 
 ### 💜 HEROKU
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/AKD1317/HYPER-X-0.1"><img src="https://telegra.ph/file/14486e0786c325b01a007.jpg"width="300"heigh="100" /></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/aman706/ironmanvc21"><img src="https://telegra.ph/file/14486e0786c325b01a007.jpg"width="300"heigh="100" /></a></p>
 
 ## VIA REPLIT
 Click the button below to take Pyogram String Session Or select p instead of t
